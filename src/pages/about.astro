@@ -1,30 +1,20 @@
 ---
-layout: "../layouts/Layout.astro"
-title: "About – veoEZ"
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
 ---
 
-<!-- ✅ LOGO DI ATAS -->
-<section style="text-align: center; padding: 2rem 1rem 0;">
-  <img src="/favicon.svg" alt="veoEZ logo" style="height: 80px; margin-bottom: 1rem;" />
-</section>
+<Layout title="About – veoEZ">
+  <Navigation />
 
-<!-- ✅ MENU -->
-<nav style="text-align: center; margin-bottom: 2rem;">
-  <a href="/" style="margin: 0 1rem; text-decoration: none; color: #4F46E5; font-weight: bold;">Utama</a>
-  <a href="/about" style="margin: 0 1rem; text-decoration: none; color: #4F46E5; font-weight: bold;">Tentang</a>
-</nav>
-
-<!-- ✅ ISI KANDUNGAN -->
-<section style="padding: 3rem 1rem; text-align: center; background-color: #F3F4F6;">
-  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #111827;">Tentang <span style="color: #4F46E5;">veoEZ</span></h1>
-  
-  <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 1.5rem; color: #374151;">
-    <strong>veoEZ</strong> ialah platform AI kreatif yang membolehkan anda mencipta visual, gambar, dan rekaan dengan bantuan kecerdasan buatan.
-    Direka khas untuk semua — dari pemula hingga profesional.
-  </p>
-  
-  <p style="font-size: 1rem; color: #6B7280;">
-    Dibangunkan oleh pasukan <strong>Aiez Studio</strong>
-  </p>
-</section>
-kemas kini gaya halaman about
+  <section style="padding: 4rem 1rem; text-align: center;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Tentang veoEZ</h1>
+    <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto;">
+      veoEZ ialah platform AI kreatif yang membolehkan anda mencipta visual, gambar, dan rekaan dengan bantuan kecerdasan buatan.
+      Direka khas untuk semua — dari pemula hingga profesional.
+    </p>
+    <p style="margin-top: 2rem; font-size: 1rem; color: #555;">
+      Dibangunkan oleh pasukan Aiez Studio | Inspirasi daripada Leonardo.ai
+    </p>
+  </section>
+</Layout>
+kemas kini penuh halaman about dengan layout + navigation
