@@ -1,5 +1,5 @@
 ---
-function Icon({ link, label, svg }) {
+const Icon = ({ link, label, svg }) => {
   return (
     <a href={link} title={label} style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4F46E5" style="width: 24px; height: 24px;">
@@ -8,7 +8,7 @@ function Icon({ link, label, svg }) {
       <span style="font-size: 0.7rem; margin-top: 0.25rem;">{label}</span>
     </a>
   );
-}
+};
 ---
 
 <nav style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; padding: 2rem; flex-direction: row;">
